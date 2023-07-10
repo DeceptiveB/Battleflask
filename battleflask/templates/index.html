@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %} 
+<title> Home </title>
+{% endblock %}
+
+{% block body %} 
+<div class="users-list w-25">
+	<h2>Users</h2>
+	<button class="refresh">Refresh</button>
+	<ul class="list-group users">
+	  <li class="list-group-item" aria-current="true">An active item</li>
+	  <li class="list-group-item">A second item</li>
+	  <li class="list-group-item">A third item</li>
+	  <li class="list-group-item">A fourth item</li>
+	  <li class="list-group-item">And a fifth one</li>
+	</ul>
+</div>
+
+<div class="message-list">
+	<h2>Messages</h2>
+	<ul class="list-group messages">
+	</ul>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/users.js')}}"></script>
+{% endblock %}

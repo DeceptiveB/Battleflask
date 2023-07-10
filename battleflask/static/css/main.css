@@ -1,0 +1,20 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+.users-list {
+}
+
+@media  (min-width: 600px){
+	.users-list{
+		color: blue;
+		width: 100%;
+	}
+}
